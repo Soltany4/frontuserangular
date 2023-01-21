@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+body {  
+    color: #fff;
+    background-image: url("src/assets/header.jpg");  
+    
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body::after {
+    content: "";
+    background-color: rgb(71, 91, 121);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }

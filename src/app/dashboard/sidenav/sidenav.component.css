@@ -1,0 +1,55 @@
+:host .mat-icon {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.logo {
+  text-align: center;
+ 
+}
+.logo img {
+  width: 200px;
+}
+
+.mat-divider {
+  border-top-width: 1px;
+  border-color: rgb(224, 168, 11, 0.7);
+}
+
+a{
+  color: #94a3b8 !important;
+  font-size: 1rem;
+  height: 44px !important;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid rgb(240, 240, 245, 0.5);
+  border-radius: 5px;
+
+
+}
+a:hover, a:active {
+  color: #f2f5f7 !important;
+  background-color: #374870 !important;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+h2 {
+  color: #c78409 ;
+  font-size: 2rem bold;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-left: 60px;
+}
+h4 {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  font-weight: 150;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+
+/*# sourceMappingURL=sidenav.component.css.map */
