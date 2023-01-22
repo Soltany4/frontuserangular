@@ -31,7 +31,7 @@ export class SignupComponent implements OnInit {
     }
 
     sbtn(){
-      this._route.navigate(['login']);
+      this._route.navigate(['']);
       $('.form-box').css('display', 'block');
       $('.form-box').css('display', 'none');
 

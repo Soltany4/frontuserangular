@@ -17,6 +17,8 @@ import { MatDividerModule} from '@angular/material/divider';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
+import { EmploisComponent } from './dashboard/emplois/emplois.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { MatListModule} from '@angular/material/list';
     DashboardComponent,
     HeaderComponent,
     SidenavComponent,
-    HomeComponent
+    HomeComponent,
+    EmploisComponent
 
   
   ],

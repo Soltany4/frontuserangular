@@ -11,27 +11,26 @@ declare var $:any;
 })
 export class LoginComponent implements OnInit {
 
-  login:FormGroup|any;
+
+  email:string|any;
+  password:string|any;
 
   constructor(private _route:Router){ }
 
   ngOnInit(): void {
-    this.login= new FormGroup({
-      'fname': new FormControl(),
-      'password': new FormControl()
-
-    })
+   
   }
-  logindata(login:FormGroup){
-    console.log(this.login.value)
-
-  }
+ 
 
   sbtn1(){
     this._route.navigate(['signup']);
     $('.form-box').css('display', 'block');
     $('.form-box').css('display', 'none');
 
+  }
+
+  public login1(email: string, password: string){
+    this._route.navigate(['dashboard']);
   }
 
 }
