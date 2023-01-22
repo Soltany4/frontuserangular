@@ -9,7 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { HeaderComponent } from './dashboard/header/header.component';
-import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
+
 import { HomeComponent } from './dashboard/home/home.component';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatToolbarModule} from '@angular/material/toolbar';
@@ -26,7 +26,7 @@ import { EmploisComponent } from './dashboard/emplois/emplois.component';
     SignupComponent,
     DashboardComponent,
     HeaderComponent,
-    SidenavComponent,
+
     HomeComponent,
     EmploisComponent
 

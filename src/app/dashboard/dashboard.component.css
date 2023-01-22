@@ -54,13 +54,6 @@ a:hover, a:active {
   border-radius: 5px;
   margin: 0 20px;
 }
-h2 {
-  color: #c78409 ;
-  font-size: 2rem bold;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding-left: 60px;
-}
 h4 {
   color: #94a3b8;
   font-size: 1.1rem;
@@ -70,5 +63,41 @@ h4 {
   padding-top: 10px;
 }
 
+.mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #f7f7f7;
+    height: 50px;
+}
+.justify-content-between{
+    margin-top: 5px;
+}
+button {
+    border: 1px solid rgba(10, 10, 66, 0.5);
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 10px;
+}
+.logout {
+    padding-left: 60%;
+}
+.mat-icon{
+    text-align: center;
+    vertical-align: middle;
+}
+h2{
+    color: #c78409 ;
+    font-size: 2rem bold;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 60px;
+}
 
+.page {
+  color: white;
+  padding: 0 1rem;
+  background: #f1f5f9;
+  height: 100%;
+}
 /*# sourceMappingURL=sidenav.component.css.map */

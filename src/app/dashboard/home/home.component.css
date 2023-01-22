@@ -2,11 +2,13 @@
     color: white;
     padding: 0 1rem;
     background: #f1f5f9;
+    height: 100%;
+    margin-top: -10px;
   }
   .page__box {
     min-height: 120px;
     background: #012248;
-    margin: 0 -1rem;
+    margin: 0 -2rem ;
     font-size: 36px;
   }
   .page__content {
