@@ -34,6 +34,21 @@ children: [
          m=>m.EmploisModule
        )
    },
+   {
+    path: 'cours',
+    loadChildren: () => 
+      import('./dashboard/cours/cours.module').then(
+        m=>m.CoursModule
+      )
+  },
+  {
+    path: 'epreuves',
+    loadChildren: () => 
+      import('./dashboard/epreuves/epreuves.module').then(
+        m=>m.EpreuvesModule
+      )
+  },
+
 ] 
 
 }

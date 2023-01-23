@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -17,7 +17,12 @@ import { MatDividerModule} from '@angular/material/divider';
 import { MatMenuModule} from '@angular/material/menu';
 import { MatIconModule} from '@angular/material/icon';
 import { MatListModule} from '@angular/material/list';
+import { MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule} from '@angular/material/paginator';
 import { EmploisComponent } from './dashboard/emplois/emplois.component';
+import { PdfViewerModule } from '@syncfusion/ej2-angular-pdfviewer';
+
+
 
 @NgModule({
   declarations: [
@@ -26,9 +31,11 @@ import { EmploisComponent } from './dashboard/emplois/emplois.component';
     SignupComponent,
     DashboardComponent,
     HeaderComponent,
-
     HomeComponent,
-    EmploisComponent
+    EmploisComponent,
+
+    
+    
 
   
   ],
@@ -42,7 +49,11 @@ import { EmploisComponent } from './dashboard/emplois/emplois.component';
     MatListModule,
     MatMenuModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule,
+    MatPaginatorModule,
+    HttpClientModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

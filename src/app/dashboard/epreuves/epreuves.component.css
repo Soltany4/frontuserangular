@@ -19,6 +19,9 @@
     color: black;
     font-size: 1.4rem;
   }
+  .table{
+    margin-top: 50px;
+  }
   .page__content-data {
     top: 50%;
     left: 50%;

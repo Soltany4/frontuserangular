@@ -1,0 +1,32 @@
+
+<div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Cours</div>
+  <div class="page__content shadow p-3 position-relative">
+    <h2 class=" mt-5">Liste des cours</h2>
+    
+    <div class="page__content-data position-relative text-center">
+      <div class="mat-elevation-z8">
+        <div class="container">
+          <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+              <th>Matière</th>
+              <th>Chapitre</th>
+              <th>Heurs</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let matiere of matieres">
+              <td><span>{{matiere.name}}</span></td>
+              <td><span (click)="OpenPdf()">{{matiere.cour}} </span></td>
+              <td><span>{{matiere.heurs}}</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+        
+        
+    </div>
+  </div>
+</div>

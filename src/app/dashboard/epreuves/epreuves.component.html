@@ -1,0 +1,35 @@
+
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Epreuves et Notes</div>
+    <div class="page__content shadow p-3 position-relative">
+      <h2 class=" mt-5">Liste des Epreuves</h2>
+      
+      <div class="page__content-data position-relative text-center">
+        <div class="mat-elevation-z8">
+          <div class="container">
+            <table class="table table-bordered table-striped">
+              <thead>
+              <tr>
+                <th>Matière</th>
+                <th>Epreuves</th>
+                <th>Type</th>
+                <th>Note</th>
+
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let epreuve of epreuves">
+                <td><span>{{epreuve.matiere}}</span></td>
+                <td><span >{{epreuve.id}} </span></td>
+                <td><span>{{epreuve.type}}</span></td>
+                <td><span>{{epreuve.note}}</span></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          
+          
+      </div>
+    </div>
+  </div>

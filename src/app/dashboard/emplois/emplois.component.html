@@ -2,8 +2,17 @@
   <div class="container-fluid page">
     <div class="d-flex page__box p-3 mt-2">Emplois</div>
     <div class="page__content shadow p-3 position-relative">
-      <div class="page__content-data position-absolute text-center">
-        Student Emplois
+      &nbsp; &nbsp; 
+      <tr>
+        <th>Année Scolaire :</th> &nbsp; &nbsp; 
+        <td>2022/2023</td> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 
+        <th>Classe :</th> &nbsp; &nbsp; 
+        <td *ngFor="let user of users"><span>{{user.classe}}</span></td> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; 
+        <th>Date :</th> &nbsp; &nbsp;  
+        <td>{{todayDate | date:'fullDate'}} | {{todayDate | date:'shortTime'}}</td>
+     </tr> 
+      <div class="page__content-data position-absolute text-center" *ngFor="let user of users">
+        <img src={{user.emplois}}  width="150%" height="650">
       </div>
     </div>
   </div>

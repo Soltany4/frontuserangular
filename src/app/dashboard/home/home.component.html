@@ -2,8 +2,43 @@
 <div class="container-fluid page">
     <div class="d-flex page__box p-3 mt-2">Home</div>
     <div class="page__content shadow p-3 position-relative">
-      <div class="page__content-data position-absolute text-center">
-        Student Dashboard
+      <h2 class="text-center mt-5">Student Informations</h2>
+      <div class="page__content-data position-absolute ">
+        <div class="container">
+          <table class="table table-bordered table-striped">
+            <thead>
+
+            <tr >
+              <th>Firstname</th>
+              <td *ngFor="let user of users"><span>{{user.firstname}}</span></td>
+            </tr>
+            </thead>
+            <tbody>
+            
+            <tr >
+              <th>Lastname</th>
+              <td *ngFor="let user of users"><span>{{user.lastname}}</span></td>
+            </tr>
+            <tr >
+              <th>Email</th>
+              <td *ngFor="let user of users"><span>{{user.email}}</span></td>
+            </tr>
+            <tr >
+              <th>Date Naissance</th>
+              <td *ngFor="let user of users"><span>{{user.date_Nai}}</span></td>
+            </tr>
+            <tr >
+              <th>Classe</th>
+              <td *ngFor="let user of users"><span>{{user.classe}}</span></td>
+            </tr>
+            <tr >
+              <th>Adresse</th>
+              <td *ngFor="let user of users"><span>{{user.adresse}}</span></td>
+            </tr>
+            
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
